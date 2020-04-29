@@ -8,10 +8,10 @@
     margin-bottom: 0.5%;
     border-top: #687291 1px solid;
 }
-.even{
+.odd{
     background-color: #dfe1e7;
 }
-.odd {
+.even {
     background-color: #eeeff2;
 }
 
