@@ -45,11 +45,11 @@ class DatePicker {
         var dates = document.createElement("tbody");
         // Create controls
         var prev = document.createElement("span");
-        prev.width = 100;
+        //prev.width = 100;
         prev.innerHTML = "<";
         prev.setAttribute("id","prev");
         var next = document.createElement("span");
-        next.width = 100;
+        //next.width = 100;
         next.innerHTML = ">";
         next.setAttribute("id","next");
         prev.addEventListener("click", () => {
@@ -65,13 +65,14 @@ class DatePicker {
         //Week row
         for(let i = 0 ; i < _week.length ; i++){
             cell = document.createElement("th");
-            cell.width = 50;
+            //cell.width = 50;
             cell.innerHTML = _week[i];
             first_line.appendChild(cell);
         }
         //header content
         var head_cell = document.createElement("th");
         head_cell.innerHTML = _month[date.getMonth()] + "  " + date.getFullYear();
+        head_cell.colSpan = "5";
         // filliing in the calendar
 
         //First line
@@ -82,7 +83,7 @@ class DatePicker {
         var last_max_date = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
         for(let i = 0 ; i < 7 ; i++){
             cell = document.createElement("td");
-            cell.width = 50;
+            //cell.width = 50;
             if(i < first_day){
                 cell.setAttribute("class", "notinclude");
                 cell.innerHTML = last_max_date -first_day +i + 1;
@@ -106,7 +107,7 @@ class DatePicker {
         var counter = 0;
         while ( second_start <= curr_max_date){
             cell = document.createElement("td");
-            cell.width = 50;
+            //cell.width = 50;
             cell.setAttribute("class", "include");
             cell.innerHTML = second_start;
             week.appendChild(cell);
@@ -123,7 +124,7 @@ class DatePicker {
         var last_day = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
         while(last_day !== 6) {
             cell = document.createElement("td");
-            cell.width = 50;
+            //cell.width = 50;
             cell.setAttribute("class", "notinclude");
             cell.innerHTML = next_date_filling;
             next_date_filling++;

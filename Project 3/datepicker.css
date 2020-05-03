@@ -7,3 +7,11 @@
     color: black;
     background-color: grey;
 }
+
+#next, #prev {
+    cursor: pointer;
+}
+
+table {
+    text-align: center;
+}
