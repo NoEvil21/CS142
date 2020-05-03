@@ -1,3 +1,9 @@
-.dif {
+.notinclude {
     color: grey;
+    background-color: white;
+}
+
+.include {
+    color: black;
+    background-color: grey;
 }
