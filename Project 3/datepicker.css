@@ -10,8 +10,13 @@
 
 #next, #prev {
     cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    border: solid black 1px;
 }
 
-table {
+table ,tr, td{
     text-align: center;
+    border: solid black 1px;
 }
