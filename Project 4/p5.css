@@ -1,0 +1,23 @@
+.examplebar {
+    font-size: 20;
+    text-align: center;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+
+.statesbar {
+    font-size: 20;
+    position: relative;
+    border-left: 70px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+
+
+.switchbar {
+    display: flex;
+    background-color: grey;
+
+
+}
