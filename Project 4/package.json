@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "file-loader": "^6.0.0",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.23.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router": "^5.1.2",
